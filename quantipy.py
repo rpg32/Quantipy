@@ -11,7 +11,7 @@ import inspect
 import re
 import math
 import matplotlib.pylab as plt
-from units import *
+from unitpy import *
 
 plt.close('all')
 
@@ -30,22 +30,25 @@ class qty(object):
     _units = units()
     
     def __init__(self,v,u='',p = 16):
-        self.p = p
-        self.v = v
-        self.u = u        
+        self._p = p
+        self._v = v
+        self._u = u        
         self.o = str(self._v)+ ' ' + self._u
                     
     def __str__(self):
         return str(self._v) + " '" + self._u + "'"
     
+    # u: unit
     @property
     def u(self):
         return self._u
     
+    # v: value
     @property
     def v(self):
         return self._v
 
+    # p: precision
     @property
     def p(self):
         return self._p
@@ -127,9 +130,9 @@ class qty(object):
     @p.setter
     def p(self,p):
         try:
-            if p != self.p:
+            if p != self._p:
                 self._p = p
-                self.v = round(self.v,p)
+                self._v = round(self._v,int(p))
             return True
         except:
             self._p = p
@@ -138,6 +141,8 @@ class qty(object):
     # Math  
     '''
     General template used by all operations
+    
+    TODO: must match units... doesn't convert units to same units before vaildating comparison operations and possible other operations
     '''
     def __generalMath(self,other):  
 
@@ -293,12 +298,21 @@ class qty(object):
             else:
                 return 's' 
 
-'''
+    def __str__(self):
+        return str(self.v) + ' ' + str(self.u)
+    
+    def __repr__(self):
+        return str(self.v) + ' ' + str(self.u)
 
-Test ground
- 
-'''
-units  = units()
-A = qty(10,'ft')
-B = qty(10,'m')
-C = qty(1.225,'g')
+
+if __name__ == "__main__":
+
+    '''
+
+    Test ground
+    
+    '''
+    units  = units()
+    A = qty(10,'ft')
+    B = qty(10,'m')
+    C = qty(1.225,'g')
