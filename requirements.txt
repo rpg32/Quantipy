@@ -28,7 +28,7 @@ Cython==0.26.1
 ddt==1.2.0
 decorator==4.1.2
 defusedxml==0.6.0
-Django==1.11.2
+Django==1.11.29
 docutils==0.13.1
 docx==0.2.4
 dominate==2.3.1
