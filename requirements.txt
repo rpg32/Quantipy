@@ -5,7 +5,7 @@ aniso8601==7.0.0
 arrow==0.13.1
 asn1crypto==0.24.0
 astroid==1.5.3
-autobahn==17.8.1
+autobahn==20.12.3
 Babel==2.4.0
 backports.csv==1.0.7
 beautifulsoup4==4.6.3
