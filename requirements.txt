@@ -97,7 +97,7 @@ notebook==5.0.0
 numpy==1.16.1
 numpydoc==0.7.0
 odfpy==1.4.0
-opencv-python==4.0.0.21
+opencv-python==4.2.0.32
 openpyxl==2.6.2
 packaging==19.0
 pandas==0.24.0
