@@ -109,7 +109,7 @@ pdftabextract==0.3.0
 peewee==3.9.6
 pefile==2017.11.5
 pickleshare==0.7.4
-pillow==5.4.1
+pillow==9.0.0
 pluggy==0.8.1
 prompt-toolkit==1.0.15
 psutil==5.2.2
