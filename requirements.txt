@@ -59,7 +59,7 @@ gunicorn==19.9.0
 h5py==2.8.0
 habanero==0.6.2
 html5lib==0.999999999
-httpie==1.0.2
+httpie==3.1.0
 idna==2.6
 image==1.5.27
 imagesize==0.7.1
