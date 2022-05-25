@@ -122,7 +122,7 @@ pyflakes==2.1.1
 pygit2==0.27.4
 Pygments==2.2.0
 PyInstaller==3.4
-PyJWT==1.5.3
+PyJWT==2.4.0
 pylint==1.7.2
 pymongo==2.8
 PyMuPDF==1.14.12
